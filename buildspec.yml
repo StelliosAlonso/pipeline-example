@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "No dependencies required for this static project."
+  build:
+    commands:
+      - echo "Preparing artifact..."
+      - mkdir -p build
+      - cp index.html build/
+
+artifacts:
+  files:
+    - build/**/*
+  discard-paths: yes

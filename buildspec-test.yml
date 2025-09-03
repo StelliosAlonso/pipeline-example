@@ -3,10 +3,10 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "No dependencies required for static tests"
+      - "echo No dependencies required for static tests"
   build:
     commands:
-      - echo "Running simple HTML checks..."
-      - if [ ! -f index.html ]; then echo "ERROR: index.html not found" && exit 1; fi
-      - grep -q "<title>.*</title>" index.html || (echo "ERROR: <title> tag not found" && exit 1)
-      - echo "All basic checks passed"
+      - "echo Running simple HTML checks..."
+      - "if [ ! -f index.html ]; then echo 'ERROR: index.html not found' && exit 1; fi"
+      - "grep -q \"<title>.*</title>\" index.html || (echo 'ERROR: <title> tag not found' && exit 1)"
+      - "echo All basic checks passed"

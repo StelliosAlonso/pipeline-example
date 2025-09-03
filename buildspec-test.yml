@@ -10,5 +10,3 @@ phases:
       - if [ ! -f index.html ]; then echo "ERROR: index.html not found" && exit 1; fi
       - grep -q "<title>.*</title>" index.html || (echo "ERROR: <title> tag not found" && exit 1)
       - echo "All basic checks passed"
-artifacts:
-  files: []
